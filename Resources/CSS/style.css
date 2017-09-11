@@ -23,7 +23,7 @@ right: 0px;
 }
 
 .header nav {
-   
+
 }
 
 .header a {
@@ -37,6 +37,21 @@ display: inline-flex;
 
 /* columns */
 
-.columns {
+.column {
+  display: flex;
+  align-content: space-between;
+  padding-top: 75px;
+}
 
+.column.large {
+  width: 630px;
+
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
 }

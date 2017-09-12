@@ -1,6 +1,7 @@
 /* Header */
 
 .header {
+background-color: white;
 font-family: Verdana;
 font-size: 14px;
 font-weight: bold;
@@ -10,24 +11,24 @@ justify-content: space-between;
 align-items: center;
 border-bottom: 1px solid black;
 width: 100%;
-height: 75px;
+height: 80px;
 top: 0px;
 left: 0px;
 right: 0px;
-
-}
-
-.header h3 {
-  color: MediumAquamarine;
-
+position: fixed;
+z-index: 1;
 }
 
 .header nav {
-
+  padding-right: 40px;
 }
 
 .header a {
   color: black;
+}
+
+article, aside, footer, header, hgroup, main, nav, section {
+  display: block;
 }
 
 .header .logo {
@@ -35,12 +36,42 @@ display: inline-flex;
 
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 30px
+
+}
+
+.logo span {
+  color: MediumAquamarine;
+}
+
 /* columns */
+
+.content {
+  display: flex;
+  width: 1232px;
+  margin: 0 auto 78px auto;
+  padding-top: 116px;
+
+}
+
+div {
+  border: 1px solid black;
+  display: block;
+}
+
+a {
+  color: black;
+}
 
 .column {
   display: flex;
-  align-content: space-between;
-  padding-top: 75px;
+  flex-direction: column;
+  margin-right: 32px;
+
 }
 
 .column.large {
